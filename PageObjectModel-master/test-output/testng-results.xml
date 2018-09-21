@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Mercury Tours Flight booking App Test Automation Test Suite" duration-ms="60774" started-at="2018-09-21T22:11:03Z" finished-at="2018-09-21T22:12:03Z">
+  <suite name="Mercury Tours Flight booking App Test Automation Test Suite" duration-ms="62999" started-at="2018-09-21T23:07:45Z" finished-at="2018-09-21T23:08:48Z">
     <groups>
     </groups>
-    <test name="Mercury Tours Flight booking App" duration-ms="60774" started-at="2018-09-21T22:11:03Z" finished-at="2018-09-21T22:12:03Z">
+    <test name="Mercury Tours Flight booking App" duration-ms="62999" started-at="2018-09-21T23:07:45Z" finished-at="2018-09-21T23:08:48Z">
       <class name="com.crm.qa.testcases.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5f341870]" name="setUp" is-config="true" duration-ms="7711" started-at="2018-09-21T23:11:04Z" finished-at="2018-09-21T23:11:12Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5f341870]" name="setUp" is-config="true" duration-ms="7899" started-at="2018-09-22T00:07:47Z" finished-at="2018-09-22T00:07:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateCreateNewContact(com.crm.qa.models.LoginTestModel)[pri:3, instance:com.crm.qa.testcases.LoginPageTest@5f341870]" name="validateCreateNewContact" duration-ms="7600" started-at="2018-09-21T23:11:12Z" data-provider="getCRMTestData" finished-at="2018-09-21T23:11:20Z">
+        <test-method status="PASS" signature="validateCreateNewContact(com.crm.qa.models.LoginTestModel)[pri:3, instance:com.crm.qa.testcases.LoginPageTest@5f341870]" name="validateCreateNewContact" duration-ms="9327" started-at="2018-09-22T00:07:55Z" data-provider="getCRMTestData" finished-at="2018-09-22T00:08:04Z">
           <params>
             <param index="0">
               <value>
@@ -22,15 +22,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateCreateNewContact -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5f341870]" name="tearDown" is-config="true" duration-ms="920" started-at="2018-09-21T23:11:20Z" finished-at="2018-09-21T23:11:21Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5f341870]" name="tearDown" is-config="true" duration-ms="1115" started-at="2018-09-22T00:08:04Z" finished-at="2018-09-22T00:08:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5f341870]" name="setUp" is-config="true" duration-ms="4597" started-at="2018-09-21T23:11:21Z" finished-at="2018-09-21T23:11:26Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5f341870]" name="setUp" is-config="true" duration-ms="5190" started-at="2018-09-22T00:08:06Z" finished-at="2018-09-22T00:08:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateCreateNewContact(com.crm.qa.models.LoginTestModel)[pri:3, instance:com.crm.qa.testcases.LoginPageTest@5f341870]" name="validateCreateNewContact" duration-ms="7621" started-at="2018-09-21T23:11:26Z" data-provider="getCRMTestData" finished-at="2018-09-21T23:11:33Z">
+        <test-method status="PASS" signature="validateCreateNewContact(com.crm.qa.models.LoginTestModel)[pri:3, instance:com.crm.qa.testcases.LoginPageTest@5f341870]" name="validateCreateNewContact" duration-ms="8890" started-at="2018-09-22T00:08:11Z" data-provider="getCRMTestData" finished-at="2018-09-22T00:08:20Z">
           <params>
             <param index="0">
               <value>
@@ -41,15 +41,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateCreateNewContact -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5f341870]" name="tearDown" is-config="true" duration-ms="707" started-at="2018-09-21T23:11:34Z" finished-at="2018-09-21T23:11:34Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5f341870]" name="tearDown" is-config="true" duration-ms="688" started-at="2018-09-22T00:08:20Z" finished-at="2018-09-22T00:08:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5f341870]" name="setUp" is-config="true" duration-ms="4814" started-at="2018-09-21T23:11:34Z" finished-at="2018-09-21T23:11:39Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5f341870]" name="setUp" is-config="true" duration-ms="5390" started-at="2018-09-22T00:08:21Z" finished-at="2018-09-22T00:08:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateCreateNewContact(com.crm.qa.models.LoginTestModel)[pri:3, instance:com.crm.qa.testcases.LoginPageTest@5f341870]" name="validateCreateNewContact" duration-ms="8485" started-at="2018-09-21T23:11:39Z" data-provider="getCRMTestData" finished-at="2018-09-21T23:11:48Z">
+        <test-method status="PASS" signature="validateCreateNewContact(com.crm.qa.models.LoginTestModel)[pri:3, instance:com.crm.qa.testcases.LoginPageTest@5f341870]" name="validateCreateNewContact" duration-ms="9125" started-at="2018-09-22T00:08:26Z" data-provider="getCRMTestData" finished-at="2018-09-22T00:08:35Z">
           <params>
             <param index="0">
               <value>
@@ -60,15 +60,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateCreateNewContact -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5f341870]" name="tearDown" is-config="true" duration-ms="991" started-at="2018-09-21T23:11:48Z" finished-at="2018-09-21T23:11:49Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5f341870]" name="tearDown" is-config="true" duration-ms="679" started-at="2018-09-22T00:08:36Z" finished-at="2018-09-22T00:08:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5f341870]" name="setUp" is-config="true" duration-ms="6710" started-at="2018-09-21T23:11:49Z" finished-at="2018-09-21T23:11:56Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5f341870]" name="setUp" is-config="true" duration-ms="4440" started-at="2018-09-22T00:08:36Z" finished-at="2018-09-22T00:08:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="returnDateMismatch(com.crm.qa.models.LoginTestModel)[pri:4, instance:com.crm.qa.testcases.LoginPageTest@5f341870]" name="returnDateMismatch" duration-ms="6005" started-at="2018-09-21T23:11:56Z" data-provider="getMismatchData" finished-at="2018-09-21T23:12:02Z">
+        <test-method status="FAIL" signature="returnDateMismatch(com.crm.qa.models.LoginTestModel)[pri:4, instance:com.crm.qa.testcases.LoginPageTest@5f341870]" name="returnDateMismatch" duration-ms="5722" started-at="2018-09-22T00:08:41Z" data-provider="getMismatchData" finished-at="2018-09-22T00:08:47Z">
           <params>
             <param index="0">
               <value>
@@ -118,7 +118,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- returnDateMismatch -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5f341870]" name="tearDown" is-config="true" duration-ms="704" started-at="2018-09-21T23:12:03Z" finished-at="2018-09-21T23:12:03Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5f341870]" name="tearDown" is-config="true" duration-ms="732" started-at="2018-09-22T00:08:47Z" finished-at="2018-09-22T00:08:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
