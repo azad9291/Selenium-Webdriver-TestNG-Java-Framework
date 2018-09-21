@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Mercury Tours Flight booking App Test Automation Test Suite" duration-ms="60774" started-at="2018-09-21T22:11:03Z" finished-at="2018-09-21T22:12:03Z">
+    <groups>
+    </groups>
+    <test name="Mercury Tours Flight booking App" duration-ms="60774" started-at="2018-09-21T22:11:03Z" finished-at="2018-09-21T22:12:03Z">
+      <class name="com.crm.qa.testcases.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5f341870]" name="setUp" is-config="true" duration-ms="7711" started-at="2018-09-21T23:11:04Z" finished-at="2018-09-21T23:11:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateCreateNewContact(com.crm.qa.models.LoginTestModel)[pri:3, instance:com.crm.qa.testcases.LoginPageTest@5f341870]" name="validateCreateNewContact" duration-ms="7600" started-at="2018-09-21T23:11:12Z" data-provider="getCRMTestData" finished-at="2018-09-21T23:11:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.crm.qa.models.LoginTestModel@4cc6fa2a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateNewContact -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5f341870]" name="tearDown" is-config="true" duration-ms="920" started-at="2018-09-21T23:11:20Z" finished-at="2018-09-21T23:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5f341870]" name="setUp" is-config="true" duration-ms="4597" started-at="2018-09-21T23:11:21Z" finished-at="2018-09-21T23:11:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateCreateNewContact(com.crm.qa.models.LoginTestModel)[pri:3, instance:com.crm.qa.testcases.LoginPageTest@5f341870]" name="validateCreateNewContact" duration-ms="7621" started-at="2018-09-21T23:11:26Z" data-provider="getCRMTestData" finished-at="2018-09-21T23:11:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.crm.qa.models.LoginTestModel@2b43529a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateNewContact -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5f341870]" name="tearDown" is-config="true" duration-ms="707" started-at="2018-09-21T23:11:34Z" finished-at="2018-09-21T23:11:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5f341870]" name="setUp" is-config="true" duration-ms="4814" started-at="2018-09-21T23:11:34Z" finished-at="2018-09-21T23:11:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateCreateNewContact(com.crm.qa.models.LoginTestModel)[pri:3, instance:com.crm.qa.testcases.LoginPageTest@5f341870]" name="validateCreateNewContact" duration-ms="8485" started-at="2018-09-21T23:11:39Z" data-provider="getCRMTestData" finished-at="2018-09-21T23:11:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.crm.qa.models.LoginTestModel@44828f6b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateNewContact -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5f341870]" name="tearDown" is-config="true" duration-ms="991" started-at="2018-09-21T23:11:48Z" finished-at="2018-09-21T23:11:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5f341870]" name="setUp" is-config="true" duration-ms="6710" started-at="2018-09-21T23:11:49Z" finished-at="2018-09-21T23:11:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="returnDateMismatch(com.crm.qa.models.LoginTestModel)[pri:4, instance:com.crm.qa.testcases.LoginPageTest@5f341870]" name="returnDateMismatch" duration-ms="6005" started-at="2018-09-21T23:11:56Z" data-provider="getMismatchData" finished-at="2018-09-21T23:12:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.crm.qa.models.LoginTestModel@44828f6b]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Select Flight page is not diaplayed expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Select Flight page is not diaplayed expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertFalse(Assert.java:62)
+	at com.crm.qa.pages.FlightFinderPage.goToFlightPage(FlightFinderPage.java:107)
+	at com.crm.qa.testcases.LoginPageTest.returnDateMismatch(LoginPageTest.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- returnDateMismatch -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5f341870]" name="tearDown" is-config="true" duration-ms="704" started-at="2018-09-21T23:12:03Z" finished-at="2018-09-21T23:12:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.crm.qa.testcases.LoginPageTest -->
+    </test> <!-- Mercury Tours Flight booking App -->
+  </suite> <!-- Mercury Tours Flight booking App Test Automation Test Suite -->
+</testng-results>
