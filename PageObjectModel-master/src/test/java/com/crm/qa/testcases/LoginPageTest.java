@@ -106,6 +106,7 @@ public class LoginPageTest extends TestBase {
 				model.returnMonth, model.returnDate);
 		flighFinderPage.clickContinue();
 		flighFinderPage.enterPassengerDetails(model.fname, model.lname, model.cNum);
+		
 	}
 
 	/**
