@@ -2,40 +2,40 @@
 <testng-results skipped="0" failed="1" ignored="0" total="6" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Mercury Tours Flight booking App Test Automation Test Suite" duration-ms="79342" started-at="2018-09-22T20:23:29Z" finished-at="2018-09-22T20:24:48Z">
+  <suite name="Mercury Tours Flight booking App Test Automation Test Suite" duration-ms="112040" started-at="2018-09-22T22:28:00Z" finished-at="2018-09-22T22:29:52Z">
     <groups>
     </groups>
-    <test name="Mercury Tours Flight booking App" duration-ms="79342" started-at="2018-09-22T20:23:29Z" finished-at="2018-09-22T20:24:48Z">
+    <test name="Mercury Tours Flight booking App" duration-ms="112040" started-at="2018-09-22T22:28:00Z" finished-at="2018-09-22T22:29:52Z">
       <class name="com.crm.qa.testcases.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@6fd02e5]" name="setUp" is-config="true" duration-ms="6739" started-at="2018-09-22T21:23:30Z" finished-at="2018-09-22T21:23:36Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@6fd02e5]" name="setUp" is-config="true" duration-ms="9270" started-at="2018-09-22T23:28:01Z" finished-at="2018-09-22T23:28:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.crm.qa.testcases.LoginPageTest@6fd02e5]" name="loginPageTitleTest" duration-ms="2476" started-at="2018-09-22T21:23:36Z" finished-at="2018-09-22T21:23:39Z">
+        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.crm.qa.testcases.LoginPageTest@6fd02e5]" name="loginPageTitleTest" duration-ms="3927" started-at="2018-09-22T23:28:10Z" finished-at="2018-09-22T23:28:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@6fd02e5]" name="tearDown" is-config="true" duration-ms="689" started-at="2018-09-22T21:23:39Z" finished-at="2018-09-22T21:23:40Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@6fd02e5]" name="tearDown" is-config="true" duration-ms="663" started-at="2018-09-22T23:28:14Z" finished-at="2018-09-22T23:28:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@6fd02e5]" name="setUp" is-config="true" duration-ms="4821" started-at="2018-09-22T21:23:40Z" finished-at="2018-09-22T21:23:45Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@6fd02e5]" name="setUp" is-config="true" duration-ms="5196" started-at="2018-09-22T23:28:15Z" finished-at="2018-09-22T23:28:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginTestIncorrectPwd()[pri:2, instance:com.crm.qa.testcases.LoginPageTest@6fd02e5]" name="loginTestIncorrectPwd" duration-ms="2149" started-at="2018-09-22T21:23:45Z" finished-at="2018-09-22T21:23:47Z">
+        <test-method status="PASS" signature="loginTestIncorrectPwd()[pri:2, instance:com.crm.qa.testcases.LoginPageTest@6fd02e5]" name="loginTestIncorrectPwd" duration-ms="2132" started-at="2018-09-22T23:28:20Z" finished-at="2018-09-22T23:28:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestIncorrectPwd -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@6fd02e5]" name="tearDown" is-config="true" duration-ms="811" started-at="2018-09-22T21:23:48Z" finished-at="2018-09-22T21:23:48Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@6fd02e5]" name="tearDown" is-config="true" duration-ms="891" started-at="2018-09-22T23:28:23Z" finished-at="2018-09-22T23:28:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@6fd02e5]" name="setUp" is-config="true" duration-ms="4910" started-at="2018-09-22T21:23:50Z" finished-at="2018-09-22T21:23:55Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@6fd02e5]" name="setUp" is-config="true" duration-ms="4539" started-at="2018-09-22T23:28:26Z" finished-at="2018-09-22T23:28:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateCreateNewContact(com.crm.qa.models.LoginTestModel)[pri:3, instance:com.crm.qa.testcases.LoginPageTest@6fd02e5]" name="validateCreateNewContact" duration-ms="9328" started-at="2018-09-22T21:23:55Z" data-provider="getCRMTestData" finished-at="2018-09-22T21:24:05Z">
+        <test-method status="PASS" signature="loginAndMakeFlightBookings(com.crm.qa.models.LoginTestModel)[pri:3, instance:com.crm.qa.testcases.LoginPageTest@6fd02e5]" name="loginAndMakeFlightBookings" duration-ms="10589" started-at="2018-09-22T23:28:30Z" data-provider="getCRMTestData" finished-at="2018-09-22T23:28:41Z">
           <params>
             <param index="0">
               <value>
@@ -45,16 +45,16 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateCreateNewContact -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@6fd02e5]" name="tearDown" is-config="true" duration-ms="733" started-at="2018-09-22T21:24:05Z" finished-at="2018-09-22T21:24:06Z">
+        </test-method> <!-- loginAndMakeFlightBookings -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@6fd02e5]" name="tearDown" is-config="true" duration-ms="737" started-at="2018-09-22T23:28:41Z" finished-at="2018-09-22T23:28:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@6fd02e5]" name="setUp" is-config="true" duration-ms="4969" started-at="2018-09-22T21:24:06Z" finished-at="2018-09-22T21:24:11Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@6fd02e5]" name="setUp" is-config="true" duration-ms="10236" started-at="2018-09-22T23:28:42Z" finished-at="2018-09-22T23:28:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateCreateNewContact(com.crm.qa.models.LoginTestModel)[pri:3, instance:com.crm.qa.testcases.LoginPageTest@6fd02e5]" name="validateCreateNewContact" duration-ms="8705" started-at="2018-09-22T21:24:11Z" data-provider="getCRMTestData" finished-at="2018-09-22T21:24:20Z">
+        <test-method status="PASS" signature="loginAndMakeFlightBookings(com.crm.qa.models.LoginTestModel)[pri:3, instance:com.crm.qa.testcases.LoginPageTest@6fd02e5]" name="loginAndMakeFlightBookings" duration-ms="13581" started-at="2018-09-22T23:28:52Z" data-provider="getCRMTestData" finished-at="2018-09-22T23:29:06Z">
           <params>
             <param index="0">
               <value>
@@ -64,16 +64,16 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateCreateNewContact -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@6fd02e5]" name="tearDown" is-config="true" duration-ms="734" started-at="2018-09-22T21:24:20Z" finished-at="2018-09-22T21:24:21Z">
+        </test-method> <!-- loginAndMakeFlightBookings -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@6fd02e5]" name="tearDown" is-config="true" duration-ms="704" started-at="2018-09-22T23:29:06Z" finished-at="2018-09-22T23:29:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@6fd02e5]" name="setUp" is-config="true" duration-ms="4858" started-at="2018-09-22T21:24:21Z" finished-at="2018-09-22T21:24:26Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@6fd02e5]" name="setUp" is-config="true" duration-ms="8632" started-at="2018-09-22T23:29:07Z" finished-at="2018-09-22T23:29:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateCreateNewContact(com.crm.qa.models.LoginTestModel)[pri:3, instance:com.crm.qa.testcases.LoginPageTest@6fd02e5]" name="validateCreateNewContact" duration-ms="9244" started-at="2018-09-22T21:24:26Z" data-provider="getCRMTestData" finished-at="2018-09-22T21:24:35Z">
+        <test-method status="PASS" signature="loginAndMakeFlightBookings(com.crm.qa.models.LoginTestModel)[pri:3, instance:com.crm.qa.testcases.LoginPageTest@6fd02e5]" name="loginAndMakeFlightBookings" duration-ms="15099" started-at="2018-09-22T23:29:16Z" data-provider="getCRMTestData" finished-at="2018-09-22T23:29:31Z">
           <params>
             <param index="0">
               <value>
@@ -83,16 +83,16 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateCreateNewContact -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@6fd02e5]" name="tearDown" is-config="true" duration-ms="765" started-at="2018-09-22T21:24:35Z" finished-at="2018-09-22T21:24:36Z">
+        </test-method> <!-- loginAndMakeFlightBookings -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@6fd02e5]" name="tearDown" is-config="true" duration-ms="690" started-at="2018-09-22T23:29:31Z" finished-at="2018-09-22T23:29:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@6fd02e5]" name="setUp" is-config="true" duration-ms="4896" started-at="2018-09-22T21:24:36Z" finished-at="2018-09-22T21:24:41Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@6fd02e5]" name="setUp" is-config="true" duration-ms="7398" started-at="2018-09-22T23:29:32Z" finished-at="2018-09-22T23:29:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="returnDateMismatch(com.crm.qa.models.LoginTestModel)[pri:4, instance:com.crm.qa.testcases.LoginPageTest@6fd02e5]" name="returnDateMismatch" duration-ms="6097" started-at="2018-09-22T21:24:41Z" data-provider="getMismatchData" finished-at="2018-09-22T21:24:47Z">
+        <test-method status="FAIL" signature="returnDateLesserThanDepartureDate(com.crm.qa.models.LoginTestModel)[pri:4, instance:com.crm.qa.testcases.LoginPageTest@6fd02e5]" name="returnDateLesserThanDepartureDate" duration-ms="11855" started-at="2018-09-22T23:29:39Z" data-provider="getMismatchData" finished-at="2018-09-22T23:29:51Z">
           <params>
             <param index="0">
               <value>
@@ -109,8 +109,8 @@
 	at org.testng.Assert.fail(Assert.java:93)
 	at org.testng.Assert.failNotEquals(Assert.java:512)
 	at org.testng.Assert.assertFalse(Assert.java:62)
-	at com.crm.qa.pages.FlightFinderPage.goToFlightPage(FlightFinderPage.java:107)
-	at com.crm.qa.testcases.LoginPageTest.returnDateMismatch(LoginPageTest.java:83)
+	at com.crm.qa.pages.FlightFinderPage.goToFlightPage(FlightFinderPage.java:145)
+	at com.crm.qa.testcases.LoginPageTest.returnDateLesserThanDepartureDate(LoginPageTest.java:122)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -141,8 +141,8 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- returnDateMismatch -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@6fd02e5]" name="tearDown" is-config="true" duration-ms="671" started-at="2018-09-22T21:24:48Z" finished-at="2018-09-22T21:24:48Z">
+        </test-method> <!-- returnDateLesserThanDepartureDate -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@6fd02e5]" name="tearDown" is-config="true" duration-ms="747" started-at="2018-09-22T23:29:52Z" finished-at="2018-09-22T23:29:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

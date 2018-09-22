@@ -10,7 +10,7 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="returnDateMismatch" invocation-numbers="0"/>
+          <include name="returnDateLesserThanDepartureDate" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.crm.qa.testcases.LoginPageTest -->
     </classes>
