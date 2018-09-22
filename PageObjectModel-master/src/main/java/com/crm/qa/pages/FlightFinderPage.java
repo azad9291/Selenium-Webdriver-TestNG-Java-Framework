@@ -1,7 +1,5 @@
 package com.crm.qa.pages;
 
-import static org.junit.Assert.assertFalse;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -10,81 +8,117 @@ import org.testng.Assert;
 
 import com.crm.qa.base.TestBase;
 
-public class FlightFinderPage extends TestBase{
-	
-	//Page Factory - OR:
-	@FindBy(xpath="//img[@alt='Mercury Tours']")
-	WebElement flightFinderImage;
-	
-	@FindBy(xpath="//input[@value='roundtrip']")
-	WebElement roundTrip;
-	
-	@FindBy(name="passCount")
-	WebElement passengerCount;
-	
-	@FindBy(name="fromPort")
-	WebElement fromPort;
-	
-	@FindBy(name="fromMonth")
-	WebElement onFromMonth;
-	
-	@FindBy(name="fromDay")
-	WebElement fromDate;
-	
-	@FindBy(name="toPort")
-	WebElement arrivingIn;
-	
-	@FindBy(name="toMonth")
-	WebElement returningToMonth;
-	
-	@FindBy(name="toDay")
-	WebElement returningToDay;
-	
-	@FindBy(xpath="//input[@value='Coach']")
-	WebElement economyClass;
-	
-	@FindBy(name="airline")
-	WebElement airLinePreference;
-	
-	@FindBy(name="findFlights")
-	WebElement continueBtn;
-	
-	@FindBy(name="reserveFlights")
-	WebElement continueReserveBtn;
-	
-	@FindBy(xpath="/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[1]/td/img")
-	WebElement selectFlight;
-	
-	@FindBy(name="passFirst0")
-	WebElement firstName;
-	
-	@FindBy(name="passLast0")
-	WebElement lastName;
-	
-	@FindBy(name="creditnumber")
-	WebElement ccNumber;
-	
-	@FindBy(name="buyFlights")
-	WebElement securePurchaseBtn;
-	
-	@FindBy(xpath="/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr[1]/td[2]/table/tbody/tr[1]/td/img")
-	WebElement flightConfirmation;
-	
-	
-		
+/**
+ * The Class FlightFinderPage.
+ */
+public class FlightFinderPage extends TestBase {
 
-	//Initializing the Page Objects:
-	public FlightFinderPage(){
+	/** The flight finder image. */
+	// Page Factory - OR:
+	@FindBy(xpath = "//img[@alt='Mercury Tours']")
+	WebElement flightFinderImage;
+
+	/** The round trip. */
+	@FindBy(xpath = "//input[@value='roundtrip']")
+	WebElement roundTrip;
+
+	/** The passenger count. */
+	@FindBy(name = "passCount")
+	WebElement passengerCount;
+
+	/** The from port. */
+	@FindBy(name = "fromPort")
+	WebElement fromPort;
+
+	/** The on from month. */
+	@FindBy(name = "fromMonth")
+	WebElement onFromMonth;
+
+	/** The from date. */
+	@FindBy(name = "fromDay")
+	WebElement fromDate;
+
+	/** The arriving in. */
+	@FindBy(name = "toPort")
+	WebElement arrivingIn;
+
+	/** The returning to month. */
+	@FindBy(name = "toMonth")
+	WebElement returningToMonth;
+
+	/** The returning to day. */
+	@FindBy(name = "toDay")
+	WebElement returningToDay;
+
+	/** The economy class. */
+	@FindBy(xpath = "//input[@value='Coach']")
+	WebElement economyClass;
+
+	/** The air line preference. */
+	@FindBy(name = "airline")
+	WebElement airLinePreference;
+
+	/** The continue btn. */
+	@FindBy(name = "findFlights")
+	WebElement continueBtn;
+
+	/** The continue reserve btn. */
+	@FindBy(name = "reserveFlights")
+	WebElement continueReserveBtn;
+
+	/** The select flight. */
+	@FindBy(xpath = "/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[1]/td/img")
+	WebElement selectFlight;
+
+	/** The first name. */
+	@FindBy(name = "passFirst0")
+	WebElement firstName;
+
+	/** The last name. */
+	@FindBy(name = "passLast0")
+	WebElement lastName;
+
+	/** The cc number. */
+	@FindBy(name = "creditnumber")
+	WebElement ccNumber;
+
+	/** The secure purchase btn. */
+	@FindBy(name = "buyFlights")
+	WebElement securePurchaseBtn;
+
+	/** The flight confirmation. */
+	@FindBy(xpath = "/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr[1]/td[2]/table/tbody/tr[1]/td/img")
+	WebElement flightConfirmation;
+
+	/**
+	 * Instantiates a new flight finder page.
+	 */
+	// Initializing the Page Objects:
+	public FlightFinderPage() {
 		PageFactory.initElements(driver, this);
 	}
-	
+
+	/**
+	 * Verify login success.
+	 *
+	 * @return true, if successful
+	 */
 	public boolean verifyLoginSuccess() {
 		return flightFinderImage.isDisplayed();
 	}
-	
-	
-	
-	public void fillFlighDetails(String departingFrm, String arrivingInPlace , String onDateMonth, int onDateDay,String returnMonth, int returnDate) {
+
+	/**
+	 * Fill fligh details.
+	 *
+	 * @param departingFrm the departing frm
+	 * @param arrivingInPlace the arriving in place
+	 * @param onDateMonth the on date month
+	 * @param onDateDay the on date day
+	 * @param returnMonth the return month
+	 * @param returnDate the return date
+	 */
+	public void fillFlighDetails(String departingFrm, String arrivingInPlace, String onDateMonth, int onDateDay,
+			String returnMonth, int returnDate) {
 		Select departingFromSelect = new Select(fromPort);
 		departingFromSelect.selectByVisibleText(departingFrm);
 		new Select(arrivingIn).selectByVisibleText(arrivingInPlace);
@@ -93,33 +127,54 @@ public class FlightFinderPage extends TestBase{
 		new Select(returningToMonth).selectByVisibleText(returnMonth);
 		new Select(returningToDay).selectByVisibleText(Integer.toString(returnDate));
 	}
-	
-	
-	
+
+	/**
+	 * Click continue.
+	 */
 	public void clickContinue() {
 		continueBtn.click();
 		verifySelectFlightPage();
 		continueReserveBtn.click();
 	}
-	
+
+	/**
+	 * Go to flight page.
+	 */
 	public void goToFlightPage() {
 		continueBtn.click();
 		Assert.assertFalse(verifySelectFlightPage(), "Select Flight page is not diaplayed");
 	}
-	
+
+	/**
+	 * Verify select flight page.
+	 *
+	 * @return true, if successful
+	 */
 	public boolean verifySelectFlightPage() {
 		return selectFlight.isDisplayed();
 	}
-	
-	//Actions:
-		public void enterPassengerDetails(String fName, String lName, String cNum) {
-			firstName.sendKeys(fName);
-			lastName.sendKeys(lName);
-			ccNumber.sendKeys(cNum);
-			securePurchaseBtn.click();
-		}
-		
-		public boolean bookingConfirmation() {
-			return flightConfirmation.isDisplayed();
-		}
+
+	/**
+	 * Enter passenger details.
+	 *
+	 * @param fName the f name
+	 * @param lName the l name
+	 * @param cNum the c num
+	 */
+	// Actions:
+	public void enterPassengerDetails(String fName, String lName, String cNum) {
+		firstName.sendKeys(fName);
+		lastName.sendKeys(lName);
+		ccNumber.sendKeys(cNum);
+		securePurchaseBtn.click();
+	}
+
+	/**
+	 * Booking confirmation.
+	 *
+	 * @return true, if successful
+	 */
+	public boolean bookingConfirmation() {
+		return flightConfirmation.isDisplayed();
+	}
 }

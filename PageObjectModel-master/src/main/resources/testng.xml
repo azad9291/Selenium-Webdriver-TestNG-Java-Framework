@@ -3,7 +3,7 @@
 <suite name="Mercury Tours Flight booking App Test Automation Test Suite">
 
 <listeners>
-	<listener class-name="com.crm.qa.base.TestBase"></listener>
+	<listener class-name="com.crm.qa.listeners.ExtentReportGenerator"></listener>
 </listeners>
 	<test name="Mercury Tours Flight booking App">
 		<classes>

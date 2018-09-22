@@ -4,44 +4,48 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.commons.io.FileUtils;
-import org.apache.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
-import org.testng.ITestContext;
-import org.testng.ITestListener;
-import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.crm.qa.util.TestUtil;
 import com.crm.qa.util.WebEventListener;
 
-public class TestBase implements ITestListener  {
+/**
+ * The Class TestBase.
+ */
+public class TestBase  {
 	
+	/** The driver. */
 	public static WebDriver driver;
+	
+	/** The properties. */
 	public static Properties prop;
-	public  static EventFiringWebDriver e_driver;
+	
+	/** The event firing web driver. */
+	public static EventFiringWebDriver e_driver;
+	
+	/** The event listener. */
 	public static WebEventListener eventListener;
-	protected ITestResult result;
-	ExtentHtmlReporter htmlReporter;
-    protected ExtentReports extent;
-    public ExtentTest test;
+	
+	/** The test. */
+	protected static ExtentTest test;
+
+    /** The root. */
     private static String root = System.getProperty("user.dir");
      	
+	/**
+	 * Instantiates a new test base.
+	 */
 	public TestBase(){
 		try {
 			prop = new Properties();
@@ -55,11 +59,17 @@ public class TestBase implements ITestListener  {
 		}
 	}
 	
+	/**
+	 * Tear down.
+	 */
 	@AfterMethod
 	public void tearDown() {
 		driver.quit();
 	}
 	
+	/**
+	 * Initialization of browser drivers.
+	 */
 	public static void initialization(){
 		String browserName = prop.getProperty("browser");
 		
@@ -86,72 +96,27 @@ public class TestBase implements ITestListener  {
 		
 		driver.get(prop.getProperty("url"));
 		
+	}	
+	
+	/**
+	 * Take screenshots.
+	 *
+	 * @return the file
+	 */
+	public static File takeScreenshots() {
+		  TakesScreenshot ts = (TakesScreenshot) driver ;
+		  return ts.getScreenshotAs(OutputType.FILE);
 	}
 
-	@Override
-	public void onTestStart(ITestResult result) {
-		test = extent.createTest(result.getMethod().getMethodName());
-		test.log(Status.INFO, result.getMethod().getMethodName() + "test is started");
-	}
-	
-	@Override
-	public void onTestSuccess(ITestResult result) {
-		  System.out.println("on test success");
-		  test.log(Status.PASS, result.getMethod().getMethodName() + "test is passed");
-		  TakesScreenshot ts = (TakesScreenshot) driver;
-		  File src = ts.getScreenshotAs(OutputType.FILE);
-		  try {
-			   FileUtils.copyFile(src, new File(root +"/screenshots/success/"+ result.getMethod().getMethodName() + ".png"));
-			   ExtentTest file = test.addScreenCaptureFromPath(root +"/screenshots/success/" + result.getMethod().getMethodName() + ".png");
-			   test.log(Status.PASS, result.getMethod().getMethodName() + "test passed" + file);
-		  } catch (IOException e) {
-			  e.printStackTrace();
-		  }
-	 }
-	
-	 @Override
-	 public void onTestFailure(ITestResult result) {
-	  System.out.println("on test failure");
-	  test.log(Status.FAIL, result.getMethod().getMethodName() + "test is failed");
-	  TakesScreenshot ts = (TakesScreenshot) driver;
-	  File src = ts.getScreenshotAs(OutputType.FILE);
-	  try {
-	   FileUtils.copyFile(src, new File(root +"/screenshots/failed/"+ result.getMethod().getMethodName() + ".png"));
-	   ExtentTest file = test.addScreenCaptureFromPath(root +"/screenshots/failed/" + result.getMethod().getMethodName() + ".png");
-	   test.log(Status.FAIL, result.getMethod().getMethodName() + "test is failed" + file);
-	   test.log(Status.FAIL, result.getMethod().getMethodName() + "test is failed" + result.getThrowable().getMessage());
-	  } catch (IOException e) {
-	   e.printStackTrace();
-	  }
-	 }
-		 
-	 @Override
-	 public void onTestSkipped(ITestResult result) {
-	  test.log(Status.SKIP, result.getMethod().getMethodName() + "test is skipped");
-	 }
-	 
-	 @Override
-	 public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-	  System.out.println("on test sucess within percentage");
-	 }
-	 
-	 
-	 @Override
-	 public void onFinish(ITestContext context) {
-		extent.flush();
-	 }
-	 
-	@Override
-	public void onStart(ITestContext context) {
-		String dirName = root +"/test-output/"+  "Tests_executed_on_"+new SimpleDateFormat("yyyy-MM-dd").format(new Date())+"/";
-		File directory = new File(dirName);
-		
-		if(!directory.exists()) {
-			directory.mkdir();
-		}
-		
-		htmlReporter = new ExtentHtmlReporter(dirName + new SimpleDateFormat("yyyy-MM-dd hh-mm-ss").format(new Date()) + " reports.html");
-        extent = new ExtentReports();
-        extent.attachReporter(htmlReporter);
+	/**
+	 * Creates the test.
+	 *
+	 * @param extent the Extent instance to be used
+	 * @param testName the test name
+	 * @return the extent test
+	 */
+	public static ExtentTest createTest(ExtentReports extent, String testName) {
+		test = extent.createTest(testName);
+		return test;
 	}
 }

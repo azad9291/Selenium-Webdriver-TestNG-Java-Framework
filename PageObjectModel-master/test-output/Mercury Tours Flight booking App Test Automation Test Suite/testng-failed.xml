@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Mercury Tours Flight booking App Test Automation Test Suite]">
   <listeners>
-    <listener class-name="com.crm.qa.base.TestBase"/>
+    <listener class-name="com.crm.qa.listeners.ExtentReportGenerator"/>
   </listeners>
   <test name="Mercury Tours Flight booking App(failed)">
     <classes>
